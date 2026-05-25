@@ -8,6 +8,24 @@ LCOVFILE = ./reports/coverage/lcov.info
 
 MOCHAFLAGS = --require ./test/bootstrap/node
 
+SHELL := /bin/bash
+.SHELLFLAGS = -ec
+.ONESHELL:
+
+install:
+	npm i
+
+install-dev:
+	npm i
+
+test:
+	npx vows --xunit > junit.xml
+
+lint:
+	echo "No lint command defined."
+
+integration:
+	echo '<testsuite name="integration" tests="0"></testsuite>' > jintegration.xml
 
 view-docs:
 	open ./docs/index.html
@@ -22,4 +40,4 @@ clobber: clean
 	-rm -r node_modules
 
 
-.PHONY: clean clobber
+.PHONY: test install install-dev lint integration clean clobber

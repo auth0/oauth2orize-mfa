@@ -45,23 +45,5 @@
   },
   "dependencies": {
     "utils-merge": "^1.0.0"
-  },
-  "publishConfig": {
-    "registry": "https://a0us.jfrog.io/a0us/api/npm/npm/"
-  },
-  "release": {
-    "tagFormat": "0.3.0-auth0-${version}",
-    "branches": ["master"],
-    "plugins": [
-      "@semantic-release/commit-analyzer",
-      "@semantic-release/release-notes-generator",
-      "@semantic-release/npm",
-      [
-        "@semantic-release/exec",
-        {
-          "prepareCmd": "npm version --no-git-tag-version 0.3.0-auth0-${nextRelease.version}"
-        }
-      ]
-    ]
   }
 }
