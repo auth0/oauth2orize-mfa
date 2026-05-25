@@ -74,4 +74,4 @@ curl -s -H "Authorization: Bearer $(ocm auth artifactory)" \
 
 ## Current Status
 
-The git tag `0.11.0-auth0-1.0.0` has been created on `master`. Once the Jenkins LP job is provisioned (via ESD ticket), it will publish the artifact automatically.
+The git tag `0.3.0-auth0-1.0.0` has been created on `master`. Once the Jenkins LP job is provisioned (via ESD ticket), it will publish the artifact automatically.
