@@ -1,0 +1,12 @@
+name: oauth2orize-mfa
+description: Multi-Factor Authentication exchanges for OAuth2orize.
+team_channel: "#authn-b2c-mfa-release-notifs"
+type: library
+
+build:
+  notification_channel: "#authn-b2c-mfa-release-notifs"
+  language:
+    node:
+      version: v22
+      ignore_scripts: true
+      unsafe_eval: false
